@@ -1,0 +1,10 @@
+music.play_melody("G B A G C5 B A B ", 120)
+for index in range(4):
+    maqueen.motor_run(maqueen.Motors.ALL, maqueen.Dir.CW, 20)
+    basic.pause(3000)
+    maqueen.motor_run(maqueen.Motors.M1, maqueen.Dir.CW, 20)
+    basic.pause(3000)
+    maqueen.motor_run(maqueen.Motors.M2, maqueen.Dir.CW, 20)
+    basic.pause(3000)
+    maqueen.motor_run(maqueen.Motors.ALL, maqueen.Dir.CCW, 20)
+    basic.pause(3000)

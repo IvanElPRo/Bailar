@@ -1,0 +1,16 @@
+let strip = neopixel.create(DigitalPin.P15, 24, NeoPixelMode.RGB)
+music.playMelody("G B A G C5 B A B ", 120)
+for (let index = 0; index < 4; index++) {
+    strip.showColor(neopixel.colors(NeoPixelColors.Red))
+    maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 20)
+    basic.pause(3000)
+    strip.showColor(neopixel.colors(NeoPixelColors.Orange))
+    maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 20)
+    basic.pause(3000)
+    strip.showColor(neopixel.colors(NeoPixelColors.Yellow))
+    maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 20)
+    basic.pause(3000)
+    strip.showColor(neopixel.colors(NeoPixelColors.Green))
+    maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CCW, 20)
+    basic.pause(3000)
+}
